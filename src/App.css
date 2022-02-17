@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-black: #4d4d4d;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+} */
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+.Navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 16px;
+  background-color: var(--color-pink);
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar__menu {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.navbar__search {
+  width: 45%;
+}
+
+.center {
+  margin: auto;
+}
+
+#intro {
+  background-color: #fff7d1;
+  display: flex;
+  padding: 20px;
+  border: #eeeeee solid;
+}
+
+.home__container {
+  padding: 20px;
+}
+
+.home__title {
+  margin: auto;
+  padding: 10px;
+}
+
+.intro__photo {
+  margin: auto;
+}
+
+#team {
+  padding: 20px;
+  background-color: #f0e5ae;
+  border: #eeeeee;
+}
+
+.team__title {
+  text-align: center;
+}
+
+.member__profile {
+  border-radius: 45%;
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+.member__container {
+  display: flex;
+}
+
+.member {
+  text-align: center;
+  padding: 25px;
+}
+
+#MyCollection {
+  padding: 20px;
+  background-color: hsl(50, 75%, 73%);
+  border: #eeeeee;
+  text-align: center;
 }
